@@ -2,6 +2,7 @@ package com.parse.starter;
 
 import com.parse.Parse;
 import com.parse.ParseObject;
+import com.parse.PushService;
 
 import com.parse.ParseACL;
 
@@ -26,6 +27,8 @@ public class ParseApplication extends Application {
 		defaultACL.setPublicReadAccess(true);
 		
 		ParseACL.setDefaultACL(defaultACL, true);
+		
+		PushService.setDefaultPushCallback(this, ParseStarterProjectActivity.class);
 		
 		ParseObject testObject = new ParseObject("TestObject");
 		testObject.put("foo", "bar");
