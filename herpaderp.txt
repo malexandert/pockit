@@ -1,2 +1,5 @@
 I am de heraderp lelele
+<<<<<<< HEAD
 i am too
+=======
+>>>>>>> 223fbfac4ec2f3631f9f63e46006fa55c4ec6d14
